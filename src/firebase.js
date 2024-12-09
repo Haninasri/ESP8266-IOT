@@ -3,14 +3,14 @@ import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { getDatabase } from "firebase/database";
 
 const firebaseConfig = {
-	apiKey: "AIzaSyDe4tK1DS3q8MTnbUE3bZXRz3kUwpB652c",
-	authDomain: "esp8266-a-8b851.firebaseapp.com",
+	apiKey: process.env.REACT_APP_apiKey,
+    authDomain: process.env.REACT_APP_authDomain,
 	databaseURL: "https://esp8266-a-8b851-default-rtdb.firebaseio.com",
-	projectId: "esp8266-a-8b851",
-	storageBucket: "esp8266-a-8b851.firebasestorage.app",
-	messagingSenderId: "653261709067",
-	appId: "1:653261709067:web:31fb83f298298f1c024c0e",
-	measurementId: "G-YQJ72GCPJM"
+    projectId: process.env.REACT_APP_projectId,
+    storageBucket: process.env.REACT_APP_storageBucket,
+    messagingSenderId: process.env.REACT_APP_messagingSenderId,
+    appId: process.env.REACT_APP_appId,
+    measurementId: process.env.REACT_APP_measurementId
   };
 
 // Initialize Firebase
