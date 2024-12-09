@@ -1,0 +1,14 @@
+{
+    "users": {
+      "USER_UID": {
+        "outputs": {
+          "led1": 0,
+          "led2": 1,
+          "led3": 0,
+          "led4": 1
+        },
+        "temperature": 25.6,
+        "humidity": 60.5
+      }
+    }
+  }
